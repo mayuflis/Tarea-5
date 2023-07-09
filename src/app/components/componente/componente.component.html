@@ -1,38 +1,40 @@
 <body class="cuerpo">
-    <header class="cabecera"><h1>Blog de noticias</h1></header>
-    <nav class="navegador">
-      <ul class="navegador__lista">
-        <li><a href="#formulario" class="enlace">Introducir Noticia</a></li>
-        <li><a href="#noticias" class="enlace">Ver noticias</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section class="formulario" id="formulario">
-        <label for="titulo" class="label">Título </label>
-        <input type="text" id="titulo" [(ngModel)]="newNoticia.title">
-      
-        <label for="imagen" class="label">Url de la imagen </label>
-        <input type="text" id="imagen" [(ngModel)]="newNoticia.image">
-      
-        <label for="noticia" class="label">Introduce la noticia</label>
-        <textarea id="noticia" class="noticia" rows="20" cols="40" [(ngModel)]="newNoticia.body"></textarea>
-      
-        <label for="fecha" class="label"> Introduce la fecha</label>
-        <input type="date" [(ngModel)]="newNoticia.date">
-      
-        <button (click)="guardarNoticia()" class="btn__formulario">Guardar</button>
+  <header class="cabecera">
+    <h1>Blog de noticias</h1>
+  </header>
+  <nav class="navegador">
+    <ul class="navegador__lista">
+      <li><a href="#formulario" class="enlace">Introducir Noticia</a></li>
+      <li><a href="#noticias" class="enlace">Ver noticias</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="formulario" id="formulario">
+      <label for="titulo" class="label">Título </label>
+      <input type="text" id="titulo" [(ngModel)]="newNoticia.title">
+
+      <label for="imagen" class="label">Url de la imagen </label>
+      <input type="text" id="imagen" [(ngModel)]="newNoticia.image">
+
+      <label for="noticia" class="label">Introduce la noticia</label>
+      <textarea id="noticia" class="noticia" rows="20" cols="40" [(ngModel)]="newNoticia.body"></textarea>
+
+      <label for="fecha" class="label"> Introduce la fecha</label>
+      <input type="date" [(ngModel)]="newNoticia.date">
+
+      <button (click)="guardarNoticia()" class="btn__formulario">Guardar</button>
+    </section>
+
+    <article class="articulo">
+      <header class="articulo__cabecera">
+        <h2>Noticias</h2>
+      </header>
+      <section class="seccionNoticias" id="noticias" [innerHTML]="mostrarinfo()">
+
       </section>
-      
-      <article class="articulo">
-        <header class="articulo__cabecera"><h2>Noticias</h2> </header>
-        <section class="seccionNoticias" id="noticias" [innerHTML]="mostrarinfo()">
-        
-      </section>
-      </article>
-      
-     
-      </main>
-  
-  </body>
-    
-  
+    </article>
+
+
+  </main>
+
+</body>

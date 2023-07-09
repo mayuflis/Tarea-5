@@ -21,13 +21,13 @@ export class ComponenteComponent {
       {
         title: 'Españoles por el mundo',
         image: 'http://via.placeholder.com/200x200',
-        body: 'jkfljkdfjkasljkljdfsld',
+        body: 'Programa que se acerca a destinos de todo el mundo a través de los españoles que han decidido instalarse en otro país. Estos nuevos emigrantes ofrecen su particular punto de vista sobre el país que los ha acogido y explican sus anécdotas sobre cómo son sus vidas allí.',
         date: new Date('1/12/2022'),
       },
       {
         title: 'Guerra de Ucrania',
         image: 'http://via.placeholder.com/200x200',
-        body: 'jkfljkdfjkasljkljdfsld',
+        body: 'Zelenski regresó de Turquía con el apoyo de Erdogan para que Ucrania entre en la OTAN y con cinco comandantes del regimiento Azov',
         date: new Date('2/05/2023'),
       },
     ];
