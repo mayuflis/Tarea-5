@@ -64,6 +64,6 @@ export class ComponenteComponent {
       alert('Es necesario rellenar todos los campos');
     }
 
-    console.log(this.newNoticia);
+  
   }
 }
