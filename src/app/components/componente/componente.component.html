@@ -23,9 +23,14 @@
         <button (click)="guardarNoticia()" class="btn__formulario">Guardar</button>
       </section>
       
-      <section class="seccionNoticias" id="noticias" [innerHTML]="mostrarinfo()">
+      <article class="articulo">
+        <header class="articulo__cabecera"><h2>Noticias</h2> </header>
+        <section class="seccionNoticias" id="noticias" [innerHTML]="mostrarinfo()">
         
       </section>
+      </article>
+      
+     
       </main>
   
   </body>

@@ -45,3 +45,23 @@ table {
 a:link,a:visited,a:active{
 	text-decoration: none;
 }
+.seccionNoticias__cards{
+    flex-basis :25%;
+    display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+	align-items: center;
+    border: 2px solid #B2BABB;
+	padding: 1rem 1rem;
+	background-color: aliceblue;
+}
+.imagen{
+	width: 60%;
+	padding-bottom: 1rem;
+}
+.parrafo{
+	text-align: center;
+	padding: 0 0.5rem;
+	line-height: 1.5rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
