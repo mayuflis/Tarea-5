@@ -127,7 +127,7 @@ a:active {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  align-items:center;
   border: 2px solid #b2babb;
   padding: 1rem 1rem;
   background-color: aliceblue;
